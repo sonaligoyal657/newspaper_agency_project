@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="537.0" prefWidth="539.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="customer_manager.Customer_formController">
+   <children>
+      <Label layoutX="167.0" layoutY="33.0" text="Customer Manager" underline="true">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="45.0" layoutY="97.0" text="Name">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="238.0" layoutY="97.0" text="Mobile No.">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtname" layoutX="45.0" layoutY="127.0" />
+      <Button fx:id="btnsearch" layoutX="425.0" layoutY="127.0" mnemonicParsing="false" onAction="#doSearch" text="Search" />
+      <Label layoutX="45.0" layoutY="172.0" text="Address">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtaddress" layoutX="45.0" layoutY="200.0" prefHeight="25.0" prefWidth="343.0" />
+      <Label layoutX="167.0" layoutY="259.0" text="Prices">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="45.0" layoutY="259.0" text="Papers">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <ListView fx:id="lstpapers" layoutX="46.0" layoutY="289.0" prefHeight="126.0" prefWidth="103.0" />
+      <ListView fx:id="lstprices" layoutX="170.0" layoutY="289.0" onMouseClicked="#selPrice" prefHeight="126.0" prefWidth="103.0" />
+      <Label layoutX="308.0" layoutY="269.0" text="Select Area">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="selareas" layoutX="307.0" layoutY="297.0" onAction="#doFetch" prefWidth="150.0" />
+      <Label layoutX="315.0" layoutY="343.0" text="Hawker's Name">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txthawker" editable="false" layoutX="314.0" layoutY="369.0" />
+      <Button fx:id="btnclr" layoutX="94.0" layoutY="454.0" mnemonicParsing="false" onAction="#doClear" text="Clear" />
+      <Button fx:id="btnsave" layoutX="174.0" layoutY="454.0" mnemonicParsing="false" onAction="#doSave" text="Save" />
+      <Button fx:id="btnupdate" layoutX="257.0" layoutY="454.0" mnemonicParsing="false" onAction="#doUpdate" text="Update" />
+      <Button fx:id="btndel" layoutX="362.0" layoutY="454.0" mnemonicParsing="false" onAction="#doDel" text="Delete" />
+      <ComboBox fx:id="combomob" editable="true" layoutX="237.0" layoutY="127.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>
