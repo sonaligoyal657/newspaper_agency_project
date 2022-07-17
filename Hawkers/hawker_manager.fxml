@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="" minHeight="550.0" minWidth="550.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Hawkers.hawker_managerController">
+   <children>
+      <Label layoutX="176.0" layoutY="35.0" text="Hawker's Control Panel" underline="true">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblname" layoutX="75.0" layoutY="79.0" text="Name" />
+      <Label fx:id="lblmobile" layoutX="78.0" layoutY="156.0" text="Mobile No." />
+      <Label layoutX="298.0" layoutY="156.0" text="Age" />
+      <ComboBox fx:id="comboname" editable="true" layoutX="75.0" layoutY="105.0" prefWidth="150.0" />
+      <Button fx:id="btnSearch" layoutX="283.0" layoutY="105.0" mnemonicParsing="false" onAction="#dosearch" text="Search" />
+      <TextField fx:id="txtcontact" layoutX="76.0" layoutY="180.0" />
+      <TextField fx:id="txtage" layoutX="294.0" layoutY="180.0" prefHeight="25.0" prefWidth="149.0" />
+      <Label layoutX="75.0" layoutY="224.0" text="Salary" />
+      <Label layoutX="297.0" layoutY="224.0" text="Date" />
+      <TextField fx:id="txtsalary" layoutX="76.0" layoutY="241.0" />
+      <DatePicker fx:id="datepick" layoutX="293.0" layoutY="241.0" prefHeight="25.0" prefWidth="150.0" />
+      <Label fx:id="lbladdress" layoutX="78.0" layoutY="293.0" text="Address" />
+      <TextField fx:id="txtaddress" layoutX="76.0" layoutY="310.0" prefHeight="25.0" prefWidth="374.0" />
+      <Label fx:id="lblselect" layoutX="78.0" layoutY="356.0" text="Areas" />
+      <ListView fx:id="listarea" layoutX="76.0" layoutY="388.0" prefHeight="100.0" prefWidth="149.0" />
+      <Label fx:id="lblpic" layoutX="305.0" layoutY="356.0" text="Aadhar Pic" />
+      <ImageView fx:id="imgview" fitHeight="107.0" fitWidth="150.0" layoutX="425.0" layoutY="377.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="btnpic" layoutX="374.0" layoutY="352.0" mnemonicParsing="false" onAction="#dopic" prefHeight="25.0" prefWidth="71.0" text="Choose pic" />
+      <Button fx:id="btnnew" layoutX="137.0" layoutY="499.0" mnemonicParsing="false" onAction="#donew" text="New">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnsave" layoutX="211.0" layoutY="499.0" mnemonicParsing="false" onAction="#dosave" text="Save">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnupdate" layoutX="282.0" layoutY="499.0" mnemonicParsing="false" onAction="#doupdate" text="Update">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btndelete" layoutX="362.0" layoutY="499.0" mnemonicParsing="false" onAction="#dodelete" text="Delete">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="comboarea" layoutX="106.0" layoutY="361.0" onAction="#docomboarea" prefHeight="25.0" prefWidth="105.0" />
+      <Button fx:id="btnselect" layoutX="225.0" layoutY="361.0" mnemonicParsing="false" onAction="#doselect" text="Select" />
+      <Label fx:id="lblselect" layoutX="233.0" layoutY="394.0" text="Selected" />
+   </children>
+</AnchorPane>
